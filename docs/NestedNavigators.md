@@ -1,6 +1,6 @@
 # Nesting FluidTransitions inside other routers
 
-There is a gesture problem wih the FluidTransitions and either createBottomTabNavigator or createStackNavigator which means that both the core navigators and Fluid navigation which often means that the swipe back gesture can swipe back to the FluidTransitions parent page rather than previous page.
+There is a gesture problem wih the FluidTransitions and either createBottomTabNavigator or createStackNavigator which means that both the core navigators and Fluid navigation have their gestures enabled which often means that the swipe back gesture can swipe back to the FluidTransitions parent page rather than previous page.
 
 This can be fixed by dynamically turning off the gesture handler of the stack navigator.
 
